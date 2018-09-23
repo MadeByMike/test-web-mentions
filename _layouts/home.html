@@ -5,10 +5,10 @@
   <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
   <p>
-    Count: {% webmention_count http://madebymike.com.au %}
+    Count: {% webmention_count page.url %}
   </p>
   <p>
-    Mentions: {% webmentions http://madebymike.com.au %}
+    Mentions: {% webmentions page.url %}
   </p>
 
   {{ content }} {%- if site.posts.size > 0 -%}
